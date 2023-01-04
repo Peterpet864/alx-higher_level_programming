@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
-for x in range(ord("a"), ord("z") + 1):
-    if chr(x) != 'q' and chr(x) != 'e':
-        print("{}".format(chr(x)), end="")
-
+for i in range(0, 26):
+    if i == 4 or i == 16:
+        continue
+    else:
+        print("{:s}".format(chr(ord('a') + i),), end="")
